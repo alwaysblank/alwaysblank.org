@@ -12,7 +12,11 @@ const Footer = ({ className, ...props }) => (
         <nav>
           <Link>menu</Link> | <Link>goes</Link> | <Link>goes</Link>
         </nav>
-        <div className={styles.thumbsup}>👍</div>
+        <div className={styles.thumbsup}>
+          <span role="img" aria-label="Thanks pal">
+            👍
+          </span>
+        </div>
         <div className={styles.legal}>
           © {new Date().getFullYear()} Ben Martinez-Bateman
         </div>
