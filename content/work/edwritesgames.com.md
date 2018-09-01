@@ -6,7 +6,6 @@ categories : [ "site" ]
 layout: work
 type:  "work"
 highlight: true
-draft: true
 client: [ "Ed Kuehnel" ]
 link: "http://edwritesgames.com"
 excerpt: "Design and development for the portfolio of a story consultant, narrative designer, and screenwriter."

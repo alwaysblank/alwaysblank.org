@@ -6,7 +6,6 @@ categories : [ "site" ]
 layout: work
 type:  "work"
 highlight: true
-draft: true
 client: [ "Marina Martinez Consulting", "Foster Area Business Association" ]
 link: "https://fosterarea.com"
 excerpt: "Design and development for a local business association, with a particular focus on highlighting and connecting their members."

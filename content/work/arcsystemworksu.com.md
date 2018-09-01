@@ -6,7 +6,6 @@ categories : [ "site" ]
 layout: work
 type:  "work"
 highlight: true
-draft: true
 client: [ "Strangely Compelling Multimedia, Inc" ]
 link: "http://arcsystemworksu.com"
 excerpt: "Wordpress back-end for marketing/customer-outreach efforts in North America and EU."

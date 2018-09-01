@@ -1,0 +1,34 @@
+{{- partial "header.html" . }}
+
+<main>
+  <div class="post">
+    <h1 class="post-title">{{ .Title }}</h1>
+    <div class="post-line"></div>
+
+    {{ .Content }}
+
+  </div>
+
+  <form name="contact" method="POST" netlify>
+    <h3>Let's get to know each other!</h3>
+    <div class="form_block">
+      <label for="name">Who are you?</label>
+      <input type="text" name="name">
+    </div>
+    <div class="form_block">
+      <label for="email">What's your email?</label>
+      <input type="email" name="email">
+    </div>
+
+    <div class="form_block">
+      <label for="message">Write that message!</label>
+      <textarea name="message"></textarea>
+    </div>
+    <div class="form_block">
+      <input type="submit" value="Send">
+    </div>
+    <input name="_subject" type="hidden" value="alwaysblank contact submission">
+  </form>
+</main>
+
+{{- partial "footer.html" . }}

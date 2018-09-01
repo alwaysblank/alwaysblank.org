@@ -6,7 +6,6 @@ categories : [ "site" ]
 layout: work
 type:  "work"
 highlight: true
-draft: true
 client: [ "Strangely Compelling Multimedia, Inc" ]
 link: "http://bmetvfilm.com"
 excerpt: "Redesign of web presence for Brookwell McNamara film & television production company."

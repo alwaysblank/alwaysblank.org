@@ -6,7 +6,6 @@ categories : [ "site" ]
 layout: work
 type:  "work"
 highlight: true
-draft: true
 client: [ "Strangely Compelling Multimedia Inc.", "Digital Hearts USA" ]
 link: "http://digitalheartsusa.com/"
 excerpt: "Implementation of client design for company site."

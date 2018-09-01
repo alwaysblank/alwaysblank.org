@@ -2,7 +2,9 @@
 baseurl = "https://example.com/"
 languageCode = "en"
 
-theme = "hyde-hyde"
+theme = "tale"
+
+title = "Always Blank"
 
 ## Hugo Built-in Features
 # disqusShortname = "your-disqus-shortname"
@@ -11,8 +13,7 @@ theme = "hyde-hyde"
 
 ## Site Settings
 [params]
-    author = "Author"
-    title = "Title"
+    author = "Ben"
     # description = "..."
     authorimage = "/img/hugo.png"
     dateformat = "Jan 2, 2006"
@@ -22,15 +23,9 @@ theme = "hyde-hyde"
 
 ## Social Accounts
 [params.social]
-    github = "<username>"
-    instagram = "<username>"
-    xing = "<username>"
-    linkedin = "<username>"
-    twitter = "<username>"
-    facebook = "<username>"
-    stackoverflow = "<username>"
-    telegram = "<username>"
-    email = "your-email@example.com"
+    github = "alwaysblank"
+    twitter = "isalwaysblank"
+    stackoverflow = "8099010"
 
 ## Main Menu
 [[menu.main]]
@@ -39,10 +34,10 @@ theme = "hyde-hyde"
     identifier = "posts"
     url = "/posts/"
 [[menu.main]]
-    name = "Portfolio"
-    identifier = "portfolio"
+    name = "Work"
+    identifier = "work"
     weight = 200
-    url = "/portfolio/"
+    url = "/work/"
 [[menu.main]]
     name = "About"
     identifier = "about"
