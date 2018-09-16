@@ -2,7 +2,7 @@
 title: "Foster Area Business Association Portal"
 date: 2018-08-30T18:21:07-07:00
 tags : ["WordPress", "Google Maps", "JavaScript"]
-categories : [ "site" ]
+types : [ "Site" ]
 layout: work
 type:  "work"
 highlight: true

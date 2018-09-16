@@ -2,7 +2,7 @@
 title: "Arc System Works Universe"
 date: 2018-08-30T18:23:23-07:00
 tags : ["WordPress", "CMB2"]
-categories : [ "site" ]
+types : [ "Site" ]
 layout: work
 type:  "work"
 highlight: true

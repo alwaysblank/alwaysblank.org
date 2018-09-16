@@ -2,7 +2,7 @@
 title: "Ed Kuehnel Portfolio"
 date: 2018-08-30T18:14:41-07:00
 tags : [ "CMB2", "WordPress" ]
-categories : [ "site" ]
+types : [ "Site" ]
 layout: work
 type:  "work"
 highlight: true

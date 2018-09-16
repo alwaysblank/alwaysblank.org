@@ -2,7 +2,7 @@
 title: "Digital Hearts USA"
 date: 2018-08-30T18:26:06-07:00
 tags : ["WordPress"]
-categories : [ "site" ]
+types : [ "Site" ]
 layout: work
 type:  "work"
 highlight: true

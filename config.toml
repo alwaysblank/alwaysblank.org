@@ -2,14 +2,17 @@
 baseurl = "https://example.com/"
 languageCode = "en"
 
-theme = "tale"
-
 title = "Always Blank"
 
 ## Hugo Built-in Features
 # disqusShortname = "your-disqus-shortname"
 # googleAnalytics = "your-google-analytics-id"
 # enableRobotsTXT = true
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  type = "types"
 
 ## Site Settings
 [params]
@@ -19,7 +22,9 @@ title = "Always Blank"
     dateformat = "Jan 2, 2006"
     highlightjs = true
     highlightjsstyle = "github"
-    # please choose either GraphComment or Disqus
+
+[permalinks]
+  post = "/:year/:month/:title/"
 
 ## Social Accounts
 [params.social]

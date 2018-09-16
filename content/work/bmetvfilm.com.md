@@ -2,7 +2,7 @@
 title: "Brookwell McNamara Entertainment"
 date: 2018-08-30T18:24:47-07:00
 tags : ["WordPress", "JavaScript"]
-categories : [ "site" ]
+types : [ "Site", "Tool" ]
 layout: work
 type:  "work"
 highlight: true
