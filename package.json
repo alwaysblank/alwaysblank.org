@@ -1,30 +1,44 @@
 {
-  "name": "hugo-mix-tailwind",
-  "description": "Hugo Boilerplate with Laravel Mix + Tailwind CSS",
-  "version": "1.0.0",
-  "main": "resources/js/index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "eslint": "^4.10.0",
-    "eslint-config-vue": "^2.0.2",
-    "eslint-plugin-vue": "^2.1.0",
-    "laravel-mix": "^1.6.1",
-    "stylelint": "^8.2.0",
-    "stylelint-config-standard": "^17.0.0",
-    "tailwindcss": "^0.2.2",
-    "webpack": "^3.8.1"
-  },
+  "private": true,
   "scripts": {
-    "hugo": "hugo server --templateMetrics",
-    "dev": "npm run development",
-    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch-poll": "npm run watch -- --watch-poll",
-    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "lint:es": "eslint --ignore-path .gitignore \"**/*.{js,jsx}\"",
+    "lint:style": "stylelint \"src/**/*.scss\"",
+    "lint": "npm run lint:es && npm run lint:style",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,json,scss,md}\""
   },
   "dependencies": {
-    "cross-env": "^5.2.0"
+    "gatsby": "next",
+    "gatsby-link": "next",
+    "gatsby-plugin-google-fonts": "^0.0.4",
+    "gatsby-plugin-netlify": "next",
+    "gatsby-plugin-react-helmet": "next",
+    "gatsby-plugin-sass": "next",
+    "gatsby-plugin-sharp": "^1.6.48",
+    "gatsby-remark-images": "^1.5.67",
+    "gatsby-source-filesystem": "next",
+    "gatsby-transformer-remark": "next",
+    "modern-normalize": "^0.4.0",
+    "node-sass": "^4.9.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.8.2",
+    "prettier": "^1.13.3",
+    "stylelint": "^9.2.0",
+    "stylelint-config-idiomatic-order": "^5.0.0",
+    "stylelint-config-prettier": "^3.2.0",
+    "stylelint-config-recommended-scss": "^3.2.0",
+    "stylelint-scss": "^3.1.0"
   }
 }

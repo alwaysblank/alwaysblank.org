@@ -1,2 +1,9 @@
-/public/
+# Build output
+public/
+.cache/
+
+# Dependencies
 node_modules/
+
+# Logs
+*.log*
