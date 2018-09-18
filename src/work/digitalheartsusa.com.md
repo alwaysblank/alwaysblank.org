@@ -27,6 +27,8 @@ I was contracted to build the site based on a design provided by my [client](htt
 
 Although making each "section" (i.e. "Quality Assurance Testing," "Transcription") of the site's top-level pages (i.e. "Company," "Services") individual WordPress page objects allows for easier management of content by the client, it presented a unique challenge for our nav menus. The default WordPress nav assumes that each item on it links to a discreet page, so I wrote a set of functions that look for the child pages of the various top-level pages, and then build lists that link to anchors based on the page slugs. 
 
-{{% resp src="digitalheartsusa.com_services.png" caption="The \"Services\" page, which shows several sections displayed on a single page." alt="The 'Services' section on the frontend" %}}
+![The 'Services' section on the frontend](images/digitalheartsusa.com/digitalheartsusa.com_services.png)
+_The "Services" page, which shows several sections displayed on a single page._
 
-{{% resp src="digitalheartsusa.com_backend.png" caption="This shows the structure of these pages in the back-end, which makes it simple for the client to edit." alt="An example of the backend" %}}
+![An example of the backend](images/digitalheartsusa.com/digitalheartsusa.com_backend.png)
+_This shows the structure of these pages in the back-end, which makes it simple for the client to edit._
