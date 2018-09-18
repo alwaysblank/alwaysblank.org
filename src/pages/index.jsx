@@ -1,32 +1,24 @@
 // import { Link } from 'gatsby';
 import React from 'react';
-import Link from 'gatsby-link';
 import Container from '../components/Container';
 import Layout from '../components/Layout';
-import stylesContainer from '../components/Container.module.scss';
-import EmojiTag from '../components/EmojiTag';
+import PostPreview from '../components/PostPreview';
+import styles from '../components/Container.module.scss';
 
 export default ({ data }) => (
   <Layout>
     <Container>
-      <h2 className={stylesContainer.offset}>Changelog</h2>
+      <h2 className={styles.offset}>Changelog</h2>
     </Container>
     {data.allMarkdownRemark.edges.map(({ node }) => (
-      <Container key={node.id}>
-        <div>{node.frontmatter.date}</div>
-        <div>
-          <h3>
-            {node.frontmatter.tags.map(tag => <EmojiTag tag={tag} />)}
-            <Link
-              to={node.fields.slug}
-              css={{ textDecoration: `none`, color: `inherit` }}
-            >
-              {node.frontmatter.title}
-            </Link>
-          </h3>
-          {node.excerpt}
-        </div>
-      </Container>
+      <PostPreview
+        key={node.id}
+        date={node.frontmatter.date}
+        tags={node.frontmatter.tags}
+        slug={node.fields.slug}
+        title={node.frontmatter.title}
+        excerpt={node.frontmatter.description}
+      />
     ))}
   </Layout>
 );
@@ -42,11 +34,11 @@ export const query = graphql`
             title
             date(formatString: "DD MMMM, YYYY")
             tags
+            description
           }
           fields {
             slug
           }
-          excerpt
         }
       }
     }

@@ -1,0 +1,53 @@
+@import '../utils/breakpoints';
+@import '../utils/sizes';
+
+.root {
+  max-width: $content-block;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+
+  @include media-breakpoint-up(md) {
+    &>* {
+      flex: 1 1 auto;
+    }
+
+    &>*:first-child {
+      width: $left-column;
+      flex: 0 0 $left-column;
+      margin-right: 1.5rem;
+    }
+  }
+
+  @supports (display: grid) {
+    @include media-breakpoint-up(md) {
+      display: grid;
+      grid-gap: 1.5rem;
+      grid-template-columns: $left-column auto;
+
+      &>*:first-child {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.offset {
+  @include media-breakpoint-up(md) {
+    margin-left: $left-column;
+
+    @supports(display: grid) {
+      margin-left: 0;
+      grid-column: 2/3;
+    }
+  }
+}
+
+.heading {
+  margin-top: 0;
+}
