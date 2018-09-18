@@ -1,8 +1,8 @@
 ---
-title: 'Foster Area Business Association'
-date: '2017-08-10'
+title: Foster Area Business Association
+date: 2015-10-20T15:00:00-00:00
 remote: https://fosterarea.com
-description: Design & develop site to promote and connect local businesses
+description: Design & develop site to promote and connect local businesses.
 tags:
   - design
   - development
@@ -12,9 +12,11 @@ technology:
   - googlemaps
   - javascript
 client:
-  - name: Foster Area Business Association
+  - 
+    name: Foster Area Business Association
     url: https://fosterarea.com
-  - name: Marina Martinez Consulting
+  - 
+    name: Marina Martinez Consulting
     url: http://marinaforhire.com
 ---
 

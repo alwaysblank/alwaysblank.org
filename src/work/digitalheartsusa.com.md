@@ -1,14 +1,20 @@
 ---
 title: "Digital Hearts USA"
-date: 2018-08-30T18:26:06-07:00
-tags : ["WordPress"]
-categories : [ "site" ]
-layout: work
-type:  "work"
-highlight: true
-client: [ "Strangely Compelling Multimedia Inc.", "Digital Hearts USA" ]
-link: "http://digitalheartsusa.com/"
-excerpt: "Implementation of client design for company site."
+date: 2014-06-24T15:00:00-00:00
+technology: 
+  - WordPress
+tags:
+  - development
+  - website
+client: 
+  - 
+    name: Strangely Compelling Multimedia, Inc
+    url: https://scmedia.com/
+  - 
+    name: Digital Hearts USA
+    url: http://digitalheartsusa.com/
+remote: http://digitalheartsusa.com/
+description: Implementation of client design for company site.
 ---
 
 This site was intended to be a redesign and update of the web presence for the USA branch of Digital Hearts, a company that provides a number of localization, development, and marketing services for video games. 

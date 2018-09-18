@@ -9,7 +9,8 @@
     "format": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,json,scss,md}\""
   },
   "dependencies": {
-    "gatsby": "next",
+    "gatsby": "^2.0.0",
+    "gatsby-cli": "^2.4.0",
     "gatsby-link": "next",
     "gatsby-plugin-google-fonts": "^0.0.4",
     "gatsby-plugin-netlify": "next",

@@ -1,6 +1,6 @@
 ---
 title: 'Ed Kuehnel Portfolio'
-date: 2018-08-30T18:14:41-07:00
+date: 2015-07-31T15:00:00-00:00
 technology:
   - CMB2
   - WordPress
@@ -9,8 +9,9 @@ tags:
   - development
   - website
 client:
-  - name: Ed Kuehnel
-  - url: http://edwritesgames.com
+  - 
+    name: Ed Kuehnel
+    url: http://edwritesgames.com
 remote: http://edwritesgames.com
 description: Design and development for the portfolio of a story consultant, narrative designer, and screenwriter.
 ---
