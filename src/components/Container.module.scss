@@ -2,8 +2,8 @@
 @import '../utils/sizes';
 
 .root {
-  max-width: $body-width;
   display: flex;
+  max-width: $body-width;
   flex-direction: column;
   padding: 1rem;
 
@@ -41,7 +41,7 @@
   @include media-breakpoint-up(md) {
     margin-left: $left-column;
 
-    @supports(display: grid) {
+    @supports (display: grid) {
       margin-left: 0;
       grid-column: 2/3;
     }

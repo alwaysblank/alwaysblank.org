@@ -1,9 +1,10 @@
 @import '../utils/breakpoints';
 @import '../utils/sizes';
+@import '../utils/typography';
 
 .root {
-  max-width: $content-block;
   display: flex;
+  max-width: $content-block;
   flex-direction: column;
   padding: 1rem;
 
@@ -50,4 +51,12 @@
 
 .heading {
   margin-top: 0;
+}
+
+.date {
+  @include font(display);
+
+  display: block;
+  font-style: bold;
+  text-transform: uppercase;
 }

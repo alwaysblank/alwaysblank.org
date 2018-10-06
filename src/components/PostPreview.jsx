@@ -4,6 +4,11 @@ import Link from 'gatsby-link';
 import EmojiTag from './EmojiTag';
 import styles from './PostPreview.module.scss';
 
+function getDate(input) {
+  const newDate = new Date(input);
+  return `${newDate.getFullYear()}-${newDate.getMonth()}-${newDate.getDate()}`;
+}
+
 const PostPreview = ({
   className,
   date,
@@ -15,10 +20,10 @@ const PostPreview = ({
 }) => (
   <article className={`${styles.root} ${className}`} {...props}>
     <div>
-      {date} <br/>
-      {tags.map(tag => (
+      {tags.sort().map(tag => (
         <EmojiTag tag={tag} />
       ))}
+      <time className={styles.date} dateTime={`${getDate(date)}`}>{date}</time>
     </div>
     <div>
       <h3 className={styles.heading}>
@@ -34,7 +39,7 @@ const PostPreview = ({
 PostPreview.propTypes = {
   className: PropTypes.string,
   date: PropTypes.string.isRequired,
-  array: PropTypes.string.isRequired,
+  tags: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   excerpt: PropTypes.string.isRequired,

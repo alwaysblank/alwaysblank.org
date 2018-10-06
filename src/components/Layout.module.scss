@@ -14,6 +14,7 @@ html {
 body {
   @include theme(dark);
   @include font(body);
+
   line-height: 1.5;
   overflow-x: hidden;
 }
@@ -25,6 +26,7 @@ h4,
 h5,
 h6 {
   @include font(display);
+
   line-height: normal;
 }
 
@@ -37,7 +39,7 @@ a {
   text-decoration: none;
 
   .main & {
-    color: $color-lime;
+    color: $color-pine;
 
     &:not(:hover) {
       text-decoration: underline;

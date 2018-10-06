@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import emoji from 'react-easy-emoji';
 import styles from './EmojiTag.module.scss';
 
 const emojiMap = {
@@ -21,7 +22,12 @@ const EmojiTag = ({ tag, className, ...props }) => (
     className={`${styles.root} ${className}`}
     {...props}
   >
-    {emojiMap[tag]}
+    {emoji(`${emojiMap[tag]}`, {
+      props: {
+        alt: `Emoji representing ${tag.charAt(0).toUpperCase() + tag.slice(1)}`,
+        title: tag.charAt(0).toUpperCase() + tag.slice(1),
+      },
+    })}
   </span>
 );
 
