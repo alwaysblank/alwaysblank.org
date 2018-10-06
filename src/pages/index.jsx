@@ -18,6 +18,7 @@ export default ({ data }) => (
         slug={node.fields.slug}
         title={node.frontmatter.title}
         excerpt={node.frontmatter.description}
+        collection={node.fields.collection}
         url={node.fields.compositeUrl}
       />
     ))}

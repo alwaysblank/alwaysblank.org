@@ -1,16 +1,20 @@
 @import '../utils/breakpoints';
 @import '../utils/sizes';
 @import '../utils/typography';
+@import '../utils/colors';
+@import '../utils/themes';
 
 .root {
-  max-width: 100%;
   display: flex;
-  max-width: $content-block;
+  max-width: 100%;
   flex-direction: column;
-  padding: 1rem;
 
   @include media-breakpoint-up(md) {
     flex-direction: row;
+  }
+
+  &>* {
+    padding: 2rem 1rem;
   }
 
   @include media-breakpoint-up(md) {
@@ -43,7 +47,7 @@
   @include media-breakpoint-up(md) {
     margin-left: $left-column;
 
-    @supports(display: grid) {
+    @supports (display: grid) {
       margin-left: 0;
       grid-column: 2/3;
     }
@@ -52,16 +56,73 @@
 
 .heading {
   margin-top: 0;
+  font-size: 2rem;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .date {
   @include font(display);
 
   display: block;
+  font-size: 0.6rem;
   font-style: bold;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
+.type {
+  @include font(display);
+
+  padding: 0;
+  font-size: 0.6rem;
+  font-style: bold;
+  letter-spacing: 0.1em;
+  list-style: none;
+  text-transform: uppercase;
+
+  li {
+    position: relative;
+    padding: 0.25rem 0;
+    margin-bottom: 0.33rem;
+    color: $color-charcoal;
+
+    span {
+      position: relative;
+      z-index: 10;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::after {
+      position: absolute;
+      z-index: 0;
+      top: 0; right: 0; bottom: 0; left: -1rem;
+      background-color: white;
+      content: "";
+    }
+  }
+}
+
 .work {
-  border: 1px solid red;
+  aside {
+    @include theme(dark);
+
+    a {
+      color: $color-ash;
+    }
+  }
+}
+
+.separator {
+  width: 10rem;
+  height: 1px;
+  border: 0;
+  margin-right: auto;
+  margin-left: 0;
+  background-color: $color-grapefruit;
 }

@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  @include theme(dark);
+  @include theme(default);
   @include font(body);
 
   line-height: 1.5;
@@ -40,9 +40,5 @@ a {
 
   .main & {
     color: $color-pine;
-
-    &:not(:hover) {
-      text-decoration: underline;
-    }
   }
 }

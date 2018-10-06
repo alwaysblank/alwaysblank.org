@@ -1,4 +1,4 @@
-$themes: (dark: (background: $color-lime, color: $color-charcoal));
+$themes: (default: (background: $color-lime, color: $color-charcoal), dark: (background: $color-pine, color: $color-ash));
 @mixin theme($type) {
   @each $key,
   $value in map-get($themes, $type) {
