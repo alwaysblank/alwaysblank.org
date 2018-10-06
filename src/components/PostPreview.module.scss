@@ -3,6 +3,7 @@
 @import '../utils/typography';
 
 .root {
+  max-width: 100%;
   display: flex;
   max-width: $content-block;
   flex-direction: column;
@@ -28,7 +29,7 @@
     @include media-breakpoint-up(md) {
       display: grid;
       grid-gap: 1.5rem;
-      grid-template-columns: $left-column auto;
+      grid-template-columns: $left-column $content-block 1fr;
 
       &>*:first-child {
         width: 100%;
@@ -59,4 +60,8 @@
   display: block;
   font-style: bold;
   text-transform: uppercase;
+}
+
+.work {
+  border: 1px solid red;
 }
