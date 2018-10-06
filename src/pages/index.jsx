@@ -18,6 +18,7 @@ export default ({ data }) => (
         slug={node.fields.slug}
         title={node.frontmatter.title}
         excerpt={node.frontmatter.description}
+        url={node.fields.compositeUrl}
       />
     ))}
   </Layout>
@@ -38,6 +39,8 @@ export const query = graphql`
           }
           fields {
             slug
+            collection
+            compositeUrl
           }
         }
       }

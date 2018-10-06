@@ -20,6 +20,7 @@
     "gatsby-remark-images": "^1.5.67",
     "gatsby-source-filesystem": "next",
     "gatsby-transformer-remark": "next",
+    "lodash": "^4.17.11",
     "modern-normalize": "^0.4.0",
     "node-sass": "^4.9.0",
     "prop-types": "^15.6.1",

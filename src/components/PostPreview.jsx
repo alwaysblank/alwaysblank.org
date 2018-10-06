@@ -11,9 +11,11 @@ const PostPreview = ({
   slug,
   title,
   excerpt,
+  url,
+  collection,
   ...props
 }) => (
-  <article className={`${styles.root} ${className}`} {...props}>
+  <article className={`${styles.root} ${className} ${styles.work}`} {...props}>
     <div>
       {date} <br/>
       {tags.map(tag => (
@@ -22,7 +24,7 @@ const PostPreview = ({
     </div>
     <div>
       <h3 className={styles.heading}>
-        <Link to={slug} css={{ textDecoration: `none`, color: `inherit` }}>
+        <Link to={url} css={{ textDecoration: `none`, color: `inherit` }}>
           {title}
         </Link>
       </h3>
@@ -33,6 +35,8 @@ const PostPreview = ({
 
 PostPreview.propTypes = {
   className: PropTypes.string,
+  url: PropTypes.string.isRequired,
+  collection: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   array: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
