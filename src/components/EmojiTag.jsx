@@ -13,6 +13,8 @@ const emojiMap = {
   life: `🐕`,
   job: `👷‍♂`,
   accolades: `🏅`,
+  snippet: `✂`,
+  troubleshooting: `🚑`,
 };
 
 const EmojiTag = ({ tag, className, ...props }) => (

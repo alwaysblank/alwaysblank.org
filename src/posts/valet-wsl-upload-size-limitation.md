@@ -1,14 +1,16 @@
 ---
 title: "Valet WSL Upload Size Limitation"
 date: 2018-09-06T14:59:42-07:00
-tags : [ "configuration", "troubleshooting"]
-categories : [ "valet", "wsl", "tip" ]
-layout: post
-type:  "post"
-highlight: true
+tags :
+  - troubleshooting
+categories: 
+  - valet
+  - wsl
+  - tip
+  - configuration
 ---
 
-I was running into an issue where a project I was serving with [valet-wsl](https://github.com/valeryan/valet-wsl) kept complaining that I was uploading files that were too large (larger that ~2MB). Specifically, I was building something with Statamic and kept getting the following error when uploading an asset:
+I was running into an issue where a project I was serving with [valet-wsl](https://github.com/valeryan/valet-wsl) kept complaining that I was uploading files that were too large (larger than ~2MB). Specifically, I was building something with Statamic and kept getting the following error when uploading an asset:
 
 ```bash
 The file "file.jpg" exceeds your upload_max_filesize ini directive (limit is 2048 KiB).

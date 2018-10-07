@@ -2,11 +2,14 @@
 title: "Instruction Only Fieldtype"
 date: 2018-08-29T15:36:13-07:00
 lastmod: 2018-08-29T15:36:13-07:00
-tags : [ "addon", "fieldtype"]
-categories : [ "statamic" ]
-layout: post
-type:  "post"
-highlight: true
+categories:
+  - addon
+  - fieldtype
+tags: 
+  - development
+  - snippet
+technology: 
+  - statamic
 ---
 
 I needed a quick fieldtype that would allow me to enter some arbitrary text to show to the user that was not attached to an actual input field. A slightly hacky version of this wasn't hard to achieve:
