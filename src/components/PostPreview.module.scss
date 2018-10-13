@@ -5,60 +5,17 @@
 @import '../utils/themes';
 
 .root {
-  display: flex;
-  max-width: 100%;
-  flex-direction: column;
 
-  @include media-breakpoint-up(md) {
-    flex-direction: row;
-  }
-
-  &>* {
-    padding: 2rem 1rem;
-  }
-
-  @include media-breakpoint-up(md) {
-    &>* {
-      flex: 1 1 auto;
-    }
-
-    &>*:first-child {
-      width: $left-column;
-      flex: 0 0 $left-column;
-      margin-right: 1.5rem;
-    }
-  }
-
-  @supports (display: grid) {
-    @include media-breakpoint-up(md) {
-      display: grid;
-      grid-gap: 1.5rem;
-      grid-template-columns: $left-column $content-block 1fr;
-
-      &>*:first-child {
-        width: 100%;
-        margin-right: 0;
-      }
-    }
-  }
-}
-
-.offset {
-  @include media-breakpoint-up(md) {
-    margin-left: $left-column;
-
-    @supports (display: grid) {
-      margin-left: 0;
-      grid-column: 2/3;
-    }
-  }
 }
 
 .heading {
-  margin-top: 0;
+  margin: 0;
   font-size: 2rem;
 
   a {
+    padding: 0 0.25rem;
+    background-color: $color-pine;
+    color: $color-lime;
     text-decoration: none;
   }
 }
@@ -85,8 +42,9 @@
 
   li {
     position: relative;
+    display: inline-block;
     padding: 0.25rem 0;
-    margin-bottom: 0.33rem;
+    margin-right: 1rem;
     color: $color-charcoal;
 
     span {
@@ -95,25 +53,7 @@
     }
 
     &:last-child {
-      margin-bottom: 0;
-    }
-
-    &::after {
-      position: absolute;
-      z-index: 0;
-      top: 0; right: 0; bottom: 0; left: -1rem;
-      background-color: white;
-      content: "";
-    }
-  }
-}
-
-.work {
-  aside {
-    @include theme(dark);
-
-    a {
-      color: $color-ash;
+      margin-right: 0;
     }
   }
 }

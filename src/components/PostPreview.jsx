@@ -21,23 +21,23 @@ const PostPreview = ({
   ...props
 }) => (
   <article className={`${styles.root} ${className} ${collection == `work` ? styles.work : null}`} {...props}>
-    <aside>
-      <time className={styles.date} dateTime={`${getDate(date)}`}>{date}</time>
-      <hr className={styles.separator}/>
-      <ul className={styles.type}>
-        {tags.sort().map(tag => (
-          <li>
-            <span>
-              <EmojiTag tag={tag} /> {tag}
-            </span>
-          </li>
-        ))}
-      </ul>
-    </aside>
     <div>
       <h3 className={styles.heading}>
         <Link to={url}>{title}</Link>
       </h3>
+      <div>
+        <time className={styles.date} dateTime={`${getDate(date)}`}>{date}</time>
+        <hr className={styles.separator}/>
+        <ul className={styles.type}>
+          {tags.sort().map(tag => (
+            <li>
+              <span>
+                <EmojiTag tag={tag} /> {tag}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </div>
       {excerpt}
     </div>
   </article>
