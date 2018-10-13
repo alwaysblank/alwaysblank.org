@@ -1,16 +1,10 @@
 import { graphql } from 'gatsby';
 import React from 'react';
-import Container from '../components/Container';
 import Layout from '../components/Layout';
 import List from '../components/List';
-import PostPreview from '../components/PostPreview';
-import styles from '../components/Container.module.scss';
 
 export default ({ data }) => (
   <Layout>
-    <Container>
-      <h2 className={styles.offset}>Changelog</h2>
-    </Container>
     <List items={data.allMarkdownRemark.edges} />
   </Layout>
 );

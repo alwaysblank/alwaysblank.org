@@ -1,13 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import Link from 'gatsby-link';
-import EmojiTag from './EmojiTag';
+import EmojiTagList from './EmojiTagList';
 import styles from './PostPreview.module.scss';
-
-function getDate(input) {
-  const newDate = new Date(input);
-  return `${newDate.getFullYear()}-${newDate.getMonth()}-${newDate.getDate()}`;
-}
+import { getDate } from '../utils/tools';
 
 const PostPreview = ({
   className,
@@ -27,16 +23,8 @@ const PostPreview = ({
       </h3>
       <div>
         <time className={styles.date} dateTime={`${getDate(date)}`}>{date}</time>
-        <hr className={styles.separator}/>
-        <ul className={styles.type}>
-          {tags.sort().map(tag => (
-            <li>
-              <span>
-                <EmojiTag tag={tag} /> {tag}
-              </span>
-            </li>
-          ))}
-        </ul>
+        <hr className={styles.separator} />
+        <EmojiTagList tags={tags} className={styles.type} />
       </div>
       {excerpt}
     </div>

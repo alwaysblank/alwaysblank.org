@@ -1,6 +1,27 @@
 @import '../utils/breakpoints';
 @import '../utils/sizes';
+@import '../utils/grid';
+
+.root {
+  @include media-breakpoint-up(md) {
+    @include grid();
+  }
+}
+
+.header {
+  padding: 1rem;
+
+  @include media-breakpoint-up(md) {
+    grid-column: 1 / 2;
+  }
+}
 
 .title {
   margin-top: 0;
+}
+
+.content {
+  @include media-breakpoint-up(md) {
+    grid-column: 2 / 3;
+  }
 }
