@@ -6,6 +6,7 @@
 
 .root {
   display: flex;
+  flex-direction: column;
   padding: 1em 0;
 
   @include media-breakpoint-up(md) {
@@ -14,16 +15,23 @@
 }
 
 .brand {
-  text-align: right;
+  text-align: left;
 
   @include media-breakpoint-up(md) {
     grid-column: 1 / 2;
+    text-align: right;
   }
 }
 
 .link {
-  display: inline-block;
-  width: 150px;
+  display: block;
+  width: 50px;
+  margin-bottom: 1rem;
+
+  @include media-breakpoint-up(md) {
+    width: 150px;
+    margin-bottom: 0;
+  }
 }
 
 .image {
@@ -45,9 +53,12 @@
   border-bottom: 3px solid $color-pine;
   margin: 0;
   margin-bottom: 0.75rem;
-  font-size: 3.5rem;
   font-weight: 800;
   line-height: 0.95;
+
+  @include media-breakpoint-up(md) {
+    font-size: 3.5rem;
+  }
 }
 
 .headerTagline {

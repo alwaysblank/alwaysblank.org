@@ -18,19 +18,13 @@ The file "file.jpg" exceeds your upload_max_filesize ini directive (limit is 204
 
 Eventually I fould my way to [this issue](https://github.com/cpriego/valet-linux/issues/172) on the Linux version of Valet that the WSL version is forked from. The only missing link was which files, exactly, the modify. I ended up modifying the following:
 
-## `/etc/nginx/nginx.conf`
-
-To this I added:
-
 ```conf
+# /etc/nginx/nginx.conf
 client_max_body_size 128M
 ```
 
-## `/etc/php/7.2/fpm/php.ini`
-
-To this I added:
-
 ```conf
+# /etc/php/7.2/fpm/php.ini
 upload_max_filesize 128M
 post_max_size 200M
 ```
