@@ -1,27 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import EmojiTag from '../components/EmojiTag';
-import styles from '../components/EmojiTagList.module.scss';
+import IconTag from '../components/IconTag';
+import styles from '../components/TagList.module.scss';
 
-const EmojiTagList = ({ tags, className }) => (
+const TagList = ({ tags, className }) => (
   <ul className={`${styles.root} ${className}`}>
     {tags.sort().map(tag => (
       <li>
         <span>
-          <EmojiTag tag={tag} /> {tag}
+          <IconTag tag={tag} /> {tag}
         </span>
       </li>
     ))}
   </ul>
 );
 
-EmojiTagList.propTypes = {
+TagList.propTypes = {
   className: PropTypes.string,
   tags: PropTypes.node.isRequired,
 };
 
-EmojiTagList.defaultProps = {
+TagList.defaultProps = {
   className: '',
 };
 
-export default EmojiTagList;
+export default TagList;

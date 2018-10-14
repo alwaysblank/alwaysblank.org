@@ -31,7 +31,7 @@
   text-transform: uppercase;
 }
 
-.type {
+.tags {
   padding: 0;
   list-style: none;
 
@@ -67,4 +67,18 @@
       background-color: $color-grapefruit;
     }
   }
+
+  .type {
+    color: $color-grapefruit;
+  }
+}
+
+.type {
+  @include font(display);
+
+  color: $color-pine;
+  font-size: 0.7rem;
+  font-style: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }

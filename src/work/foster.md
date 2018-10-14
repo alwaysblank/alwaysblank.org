@@ -1,16 +1,16 @@
 ---
 title: Foster Area Business Association
 date: 2015-10-20T15:00:00-00:00
+type: Website
 remote: https://fosterarea.com
 description: Design & develop site to promote and connect local businesses.
 tags:
   - design
   - development
-  - website
 technology:
-  - wordpress
-  - googlemaps
-  - javascript
+  - WordPress
+  - Google Maps
+  - JavaScript
 client:
   - 
     name: Foster Area Business Association

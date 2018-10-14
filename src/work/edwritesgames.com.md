@@ -1,13 +1,13 @@
 ---
 title: 'Ed Kuehnel Portfolio'
 date: 2015-07-31T15:00:00-00:00
+type: Website
 technology:
   - CMB2
   - WordPress
 tags:
   - design
   - development
-  - website
 client:
   - 
     name: Ed Kuehnel

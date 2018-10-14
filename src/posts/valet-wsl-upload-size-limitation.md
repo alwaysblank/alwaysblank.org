@@ -1,6 +1,7 @@
 ---
 title: "Valet WSL Upload Size Limitation"
 date: 2018-09-06T14:59:42-07:00
+type: Snippet
 tags :
   - troubleshooting
 categories: 

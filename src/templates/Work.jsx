@@ -1,14 +1,29 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 import Layout from '../components/Layout';
-import EmojiTag from '../components/EmojiTag';
 import Content from '../components/Content';
-import EmojiTagList from '../components/EmojiTagList';
+import TagList from '../components/TagList';
+import IconTag from '../components/IconTag';
 import { getDate } from '../utils/tools';
 import styles from './Work.module.scss';
 
 export default ({ data }) => {
   const post = data.markdownRemark;
+  let technology = '';
+  if (
+    post.frontmatter.technology &&
+    Array.isArray(post.frontmatter.technology)
+  ) {
+    technology = (
+      <ul className={styles.technology}>
+        {post.frontmatter.technology.sort().map(tech => (
+          <li>
+            <IconTag tag={tech} />
+          </li>
+        ))}
+      </ul>
+    );
+  }
   return (
     <Layout>
       <article className={styles.root}>
@@ -21,7 +36,8 @@ export default ({ data }) => {
             {post.frontmatter.date}
           </time>
           <hr className={styles.separator} />
-          <EmojiTagList tags={post.frontmatter.tags} className={styles.type} />
+          <TagList tags={post.frontmatter.tags} className={styles.type} />
+          {technology}
         </header>
         <Content content={post} className={styles.content} />
       </article>
@@ -38,6 +54,8 @@ export const query = graphql`
         date(formatString: "DD MMMM, YYYY")
         tags
         description
+        technology
+        categories
       }
     }
   }

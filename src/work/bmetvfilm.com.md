@@ -1,15 +1,12 @@
 ---
 title: "Brookwell McNamara Entertainment"
 date: 2014-06-24T15:00:00-00:00
+type: Website
 technology:
   - WordPress
   - JavaScript
 tags:
   - development
-  - website
-layout: work
-type:  "work"
-highlight: true
 client: 
   - 
     name: Strangely Compelling Multimedia, Inc

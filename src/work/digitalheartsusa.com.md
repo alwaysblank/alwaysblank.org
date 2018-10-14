@@ -1,11 +1,11 @@
 ---
 title: "Digital Hearts USA"
 date: 2014-06-24T15:00:00-00:00
+type: Website
 technology: 
   - WordPress
 tags:
   - development
-  - website
 client: 
   - 
     name: Strangely Compelling Multimedia, Inc

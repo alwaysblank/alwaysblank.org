@@ -1,12 +1,12 @@
 ---
 title: Arc System Works Universe
 date: 2014-09-16T15:00:00-00:00
+type: Website
 technology: 
   - WordPress
   - CMB2
 tags:
   - development
-  - website
 client: 
   - 
     name: Strangely Compelling Multimedia, Inc
