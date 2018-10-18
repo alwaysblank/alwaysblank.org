@@ -12,6 +12,7 @@ const List = ({ className, items, sidebar, ...props }) => (
           key={item.node.id}
           date={item.node.frontmatter.date}
           tags={item.node.frontmatter.tags}
+          categories={item.node.frontmatter.categories}
           type={item.node.frontmatter.type}
           slug={item.node.fields.slug}
           title={item.node.frontmatter.title}

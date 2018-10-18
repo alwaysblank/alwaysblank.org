@@ -2,8 +2,7 @@
 title: "Valet WSL Upload Size Limitation"
 date: 2018-09-06T14:59:42-07:00
 type: Snippet
-tags :
-  - troubleshooting
+description: Fixed a problem with uploading in valet-wsl.
 categories: 
   - valet
   - wsl

@@ -17,14 +17,14 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `posts`,
-        path: `${__dirname}/src/posts/`,
+        name: `code`,
+        path: `${__dirname}/src/code/`,
       },
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`raleway\:700`, `zilla slab\:400,400i,700`],
+        fonts: [`raleway:700`, `zilla slab:400,400i,700`],
       },
     },
     `gatsby-plugin-sharp`,

@@ -61,18 +61,6 @@
   background-color: $color-grapefruit;
 }
 
-.work {
-  .heading {
-    a {
-      background-color: $color-grapefruit;
-    }
-  }
-
-  .type {
-    color: $color-grapefruit;
-  }
-}
-
 .type {
   @include font(display);
 
@@ -81,4 +69,29 @@
   font-style: bold;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+
+.work {
+  .heading {
+    a {
+      background-color: map-get($types, work);
+    }
+  }
+
+  .type {
+    color: map-get($types, work);
+  }
+}
+
+.code {
+  .heading {
+    a {
+      background-color: map-get($types, code);
+    }
+  }
+
+  .type {
+    color: map-get($types, code);
+  }
 }

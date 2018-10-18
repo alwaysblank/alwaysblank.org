@@ -1,7 +1,6 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 import Layout from '../components/Layout';
-import Article from '../components/Article';
 import Content from '../components/Content';
 import TagList from '../components/TagList';
 import IconTag from '../components/IconTag';
@@ -27,7 +26,7 @@ export default ({ data }) => {
   }
   return (
     <Layout>
-      <Article className={styles.root}>
+      <article className={styles.root}>
         <header className={styles.header}>
           <h1 className={styles.title}>{post.frontmatter.title}</h1>
           <time
@@ -41,13 +40,13 @@ export default ({ data }) => {
           {technology}
         </header>
         <Content content={post} className={styles.content} />
-      </Article>
+      </article>
     </Layout>
   );
 };
 
 export const query = graphql`
-  query WorkPostQuery($slug: String!) {
+  query DefaultPostQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
