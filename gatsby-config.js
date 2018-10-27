@@ -22,6 +22,14 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+        rule: {
+          include: /images/,
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`raleway:700`, `zilla slab:400,400i,700`],

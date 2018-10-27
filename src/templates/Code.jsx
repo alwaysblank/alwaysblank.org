@@ -6,6 +6,7 @@ import Content from '../components/Content';
 import CategoryList from '../components/CategoryList';
 import { getDate } from '../utils/tools';
 import styles from './Code.module.scss';
+import Technology from '../components/Technology';
 
 export default ({ data }) => {
   const post = data.markdownRemark;
@@ -26,6 +27,7 @@ export default ({ data }) => {
             categories={post.frontmatter.categories}
             className={styles.categories}
           />
+          <Technology technology={post.frontmatter.technology} />
         </header>
         <Content content={post} className={styles.content} />
       </Article>
@@ -40,7 +42,7 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "DD MMMM, YYYY")
-        tags
+        technology
         description
         categories
       }

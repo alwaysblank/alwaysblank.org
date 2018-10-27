@@ -8,6 +8,10 @@ categories:
   - wsl
   - tip
   - configuration
+technology:
+  - PHP
+  - Laravel
+  - nginx
 ---
 
 I was running into an issue where a project I was serving with [valet-wsl](https://github.com/valeryan/valet-wsl) kept complaining that I was uploading files that were too large (larger than ~2MB). Specifically, I was building something with Statamic and kept getting the following error when uploading an asset:

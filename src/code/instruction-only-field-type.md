@@ -6,7 +6,8 @@ type: Snippet
 categories:
   - addon
   - fieldtype
-  - statamic
+technology:
+  - Statamic
 description: Simple text-only "field" for Statamic's control panel.
 ---
 
@@ -14,7 +15,6 @@ I needed a quick fieldtype that would allow me to enter some arbitrary text to s
 
 ```php
 // addons/Exposition/ExpositionFieldtype.php
-<?php
 
 namespace Statamic\Addons\Exposition;
 

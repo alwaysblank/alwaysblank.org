@@ -14,15 +14,20 @@ import {
   FaSuitcase,
   FaDog,
   FaChalkboard,
+  FaPhp,
+  FaLaravel,
 } from 'react-icons/fa';
 import { TiPen } from 'react-icons/ti';
+import Statamic from '../images/Statamic.svg';
+import Nginx from '../images/nginx.svg';
 import styles from './IconTag.module.scss';
 
+// Uses https://react-icons.netlify.com/
 const tagMap = {
-  WordPress: <IoLogoWordpress />,
-  JavaScript: <FaJs />,
-  CMB2: <IoIosAlbums />,
-  'Google Maps': <FaMapMarkedAlt />,
+  wordpress: <IoLogoWordpress />,
+  javascript: <FaJs />,
+  cmb2: <IoIosAlbums />,
+  'google maps': <FaMapMarkedAlt />,
   design: <IoIosColorPalette />,
   development: <IoMdCode />,
   essay: <TiPen />,
@@ -31,6 +36,10 @@ const tagMap = {
   job: <FaSuitcase />,
   accolades: <FaAward />,
   troubleshooting: <FaAmbulance />,
+  php: <FaPhp />,
+  laravel: <FaLaravel />,
+  statamic: <Statamic />,
+  nginx: <Nginx />,
 };
 
 const IconTag = ({ tag, className, ...props }) => (
@@ -38,11 +47,11 @@ const IconTag = ({ tag, className, ...props }) => (
     role="img"
     aria-label={tag}
     className={`${styles.root} ${className}`}
-    alt={`Icon representing ${tag.charAt(0).toUpperCase() + tag.slice(1)}`}
-    title={tag.charAt(0).toUpperCase() + tag.slice(1)}
+    alt={`Icon representing ${tag}`}
+    title={tag}
     {...props}
   >
-    {tagMap[tag]}
+    {tagMap[tag.toLowerCase()]}
   </span>
 );
 

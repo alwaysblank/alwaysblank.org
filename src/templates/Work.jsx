@@ -7,6 +7,7 @@ import TagList from '../components/TagList';
 import IconTag from '../components/IconTag';
 import { getDate } from '../utils/tools';
 import styles from './Work.module.scss';
+import Technology from '../components/Technology';
 
 export default ({ data }) => {
   const post = data.markdownRemark;
@@ -38,7 +39,7 @@ export default ({ data }) => {
           </time>
           <hr className={styles.separator} />
           <TagList tags={post.frontmatter.tags} className={styles.type} />
-          {technology}
+          <Technology technology={post.frontmatter.technology} />
         </header>
         <Content content={post} className={styles.content} />
       </Article>

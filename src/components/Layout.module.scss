@@ -3,6 +3,7 @@
 @import '../utils/themes';
 @import '../utils/typography';
 @import '../utils/sizes';
+@import './Monospace.module';
 
 html {
   font-size: 18px; // TODO: Remove the rule below if https://github.com/sindresorhus/modern-normalize/pull/28 gets merged and released
