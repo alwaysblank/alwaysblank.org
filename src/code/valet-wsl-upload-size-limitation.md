@@ -2,13 +2,16 @@
 title: "Valet WSL Upload Size Limitation"
 date: 2018-09-06T14:59:42-07:00
 type: Snippet
-tags :
-  - troubleshooting
+description: Fixed a problem with uploading in valet-wsl.
 categories: 
   - valet
   - wsl
   - tip
   - configuration
+technology:
+  - PHP
+  - Laravel
+  - nginx
 ---
 
 I was running into an issue where a project I was serving with [valet-wsl](https://github.com/valeryan/valet-wsl) kept complaining that I was uploading files that were too large (larger than ~2MB). Specifically, I was building something with Statamic and kept getting the following error when uploading an asset:

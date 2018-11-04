@@ -2,13 +2,13 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import styles from './Header.module.scss';
-import icon from '../images/ben-icon.svg';
+import Icon from '../images/ben-icon.svg';
 
 const Header = ({ brand, className, tagline, ...props }) => (
   <header className={`${styles.root} ${className}`} {...props}>
     <div className={styles.brand}>
       <Link className={styles.link} to="/">
-        <img src={icon} className={styles.image} alt="Ben Martinez-Bateman" />
+        <Icon className={styles.image} alt="Ben Martinez-Bateman" />
       </Link>
     </div>
     <div className={styles.header}>

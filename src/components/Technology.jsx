@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import IconTag from '../components/IconTag';
-import styles from '../components/TagList.module.scss';
+import styles from './Technology.module.scss';
 
-const TagList = ({ tags, className }) => {
-  if (tags) {
+const Technology = ({ technology, className }) => {
+  if (technology) {
     return (
       <ul className={`${styles.root} ${className}`}>
-        {tags.sort().map(tag => (
+        {technology.sort().map(tag => (
           <li>
             <span>
-              <IconTag tag={tag} /> {tag}
+              <IconTag tag={tag} title={tag} />
             </span>
           </li>
         ))}
@@ -20,14 +20,14 @@ const TagList = ({ tags, className }) => {
   return null; // Handle null tag lists
 };
 
-TagList.propTypes = {
+Technology.propTypes = {
   className: PropTypes.string,
-  tags: PropTypes.node,
+  technology: PropTypes.node,
 };
 
-TagList.defaultProps = {
+Technology.defaultProps = {
   className: '',
-  tags: null,
+  technology: null,
 };
 
-export default TagList;
+export default Technology;

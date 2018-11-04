@@ -1,0 +1,11 @@
+@import '../utils/breakpoints';
+@import '../utils/sizes';
+@import '../utils/grid';
+@import '../utils/colors';
+
+.root {
+  @include media-breakpoint-up(md) {
+    align-items: start;
+    @include grid();
+  }
+}

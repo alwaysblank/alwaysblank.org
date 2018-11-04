@@ -3,29 +3,14 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Article from '../components/Article';
 import Content from '../components/Content';
-import TagList from '../components/TagList';
-import IconTag from '../components/IconTag';
+import CategoryList from '../components/CategoryList';
 import { getDate } from '../utils/tools';
-import styles from './Work.module.scss';
+import styles from './Code.module.scss';
 import Technology from '../components/Technology';
 
 export default ({ data }) => {
   const post = data.markdownRemark;
-  let technology = '';
-  if (
-    post.frontmatter.technology &&
-    Array.isArray(post.frontmatter.technology)
-  ) {
-    technology = (
-      <ul className={styles.technology}>
-        {post.frontmatter.technology.sort().map(tech => (
-          <li>
-            <IconTag tag={tech} />
-          </li>
-        ))}
-      </ul>
-    );
-  }
+
   return (
     <Layout>
       <Article className={styles.root}>
@@ -38,7 +23,10 @@ export default ({ data }) => {
             {post.frontmatter.date}
           </time>
           <hr className={styles.separator} />
-          <TagList tags={post.frontmatter.tags} className={styles.type} />
+          <CategoryList
+            categories={post.frontmatter.categories}
+            className={styles.categories}
+          />
           <Technology technology={post.frontmatter.technology} />
         </header>
         <Content content={post} className={styles.content} />
@@ -48,15 +36,14 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query WorkPostQuery($slug: String!) {
+  query CodePostQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
         title
         date(formatString: "DD MMMM, YYYY")
-        tags
-        description
         technology
+        description
         categories
       }
       fields {

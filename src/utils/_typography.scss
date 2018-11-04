@@ -28,7 +28,8 @@
 }
 
 $fonts: ( display: ( font-family: "'Raleway', sans-serif"),
-body: (font-family: "'Zilla Slab', serif"));
+body: (font-family: "'Zilla Slab', serif"),
+mono: (font-family: "Hack, monospace"));
 @mixin font($type) {
   @each $key,
   $value in map-get($fonts,

@@ -6,17 +6,15 @@ type: Snippet
 categories:
   - addon
   - fieldtype
-tags: 
-  - development
-technology: 
+technology:
   - Statamic
+description: Simple text-only "field" for Statamic's control panel.
 ---
 
 I needed a quick fieldtype that would allow me to enter some arbitrary text to show to the user that was not attached to an actual input field. A slightly hacky version of this wasn't hard to achieve:
 
 ```php
 // addons/Exposition/ExpositionFieldtype.php
-<?php
 
 namespace Statamic\Addons\Exposition;
 
