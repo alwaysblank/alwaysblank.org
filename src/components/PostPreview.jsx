@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import Link from 'gatsby-link';
+import format from 'date-fns/format';
 import TagList from './TagList';
 import styles from './PostPreview.module.scss';
-import { getDate } from '../utils/tools';
 
 const PostPreview = ({
   className,
@@ -17,14 +17,24 @@ const PostPreview = ({
   collection,
   ...props
 }) => (
-  <article className={`${styles.root} ${className} ${collection == `work` ? styles.work : null}`} {...props}>
+  <article
+    className={`${styles.root} ${className} ${
+      collection === `work` ? styles.work : null
+    }`}
+    {...props}
+  >
     <div>
       <div className={styles.type}>{type}</div>
       <h3 className={styles.heading}>
         <Link to={url}>{title}</Link>
       </h3>
       <div>
-        <time className={styles.date} dateTime={`${getDate(date)}`}>{date}</time>
+        <time
+          className={styles.date}
+          dateTime={format(new Date(date), `YYYY-MM-DD`)}
+        >
+          {format(new Date(date), `MMMM YYYY`)}
+        </time>
         <hr className={styles.separator} />
         <TagList tags={tags} className={styles.tags} />
       </div>
