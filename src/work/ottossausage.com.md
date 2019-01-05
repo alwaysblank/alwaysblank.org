@@ -17,4 +17,5 @@ client:
   -
     name: Otto's Sausage Kitchen
     url: http://www.ottossausage.com
+draft: true
 ---

@@ -5,7 +5,11 @@ import List from '../components/List';
 
 export default ({ data }) => (
   <Layout>
-    <List items={data.allMarkdownRemark.edges} />
+    <List
+      items={data.allMarkdownRemark.edges.filter(
+        item => !item.node.frontmatter.draft
+      )}
+    />
   </Layout>
 );
 
@@ -23,6 +27,7 @@ export const query = graphql`
             categories
             description
             type
+            draft
           }
           fields {
             slug

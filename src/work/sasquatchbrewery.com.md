@@ -17,4 +17,5 @@ client:
   - 
     name: Sasquatch Brewery
     url: http://sasquatchbrewery.com
+draft: true
 ---

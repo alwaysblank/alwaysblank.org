@@ -16,6 +16,7 @@ client:
   -
     name: Stackery
     url: http://stackery.io
+draft: true
 ---
 
 Unfortunately, the site I built has been replaced.

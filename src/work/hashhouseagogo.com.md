@@ -17,4 +17,5 @@ client:
   - 
     name: Hash House a Go Go
     url: http://www.hashhouseagogo.com
+draft: true
 ---

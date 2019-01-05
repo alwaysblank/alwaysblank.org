@@ -49,28 +49,34 @@ exports.createPages = ({ graphql, actions }) => {
                 collection
                 compositeUrl
               }
+              frontmatter {
+                draft
+              }
             }
           }
         }
       }
     `).then(result => {
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        const components = {
-          work: path.resolve(`./src/templates/Work.jsx`),
-          code: path.resolve(`./src/templates/Code.jsx`),
-        };
-        createPage({
-          path: node.fields.compositeUrl,
-          component:
-            components[node.fields.collection] ||
-            path.resolve(`./src/templates/Default.jsx`),
-          context: {
-            // Data passed to context is available in page queries as GraphQL variables.
-            slug: node.fields.slug,
-            collection: node.fields.slug,
-            compositeUrl: node.fields.compositeUrl,
-          },
-        });
+        /** Don't generate drafts */
+        if (node.frontmatter.draft !== true) {
+          const components = {
+            work: path.resolve(`./src/templates/Work.jsx`),
+            code: path.resolve(`./src/templates/Code.jsx`),
+          };
+          createPage({
+            path: node.fields.compositeUrl,
+            component:
+              components[node.fields.collection] ||
+              path.resolve(`./src/templates/Default.jsx`),
+            context: {
+              // Data passed to context is available in page queries as GraphQL variables.
+              slug: node.fields.slug,
+              collection: node.fields.slug,
+              compositeUrl: node.fields.compositeUrl,
+            },
+          });
+        }
       });
       resolve();
     });
