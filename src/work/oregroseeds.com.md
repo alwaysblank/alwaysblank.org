@@ -10,11 +10,11 @@ technology:
   - Statamic
 client:
   -
-    name: Murmur Creative
-    url: https://murmurcreative.com
-  -
     name: Oregro Seeds
     url: https://oregroseeds.com/
+  -
+    name: Murmur Creative
+    url: https://murmurcreative.com
 ---
 This site was created to replace an older, outdated site. The primary function of the site is to inform visitors of the wide range of products OreGro, Inc. offers, as well as provide background on the company itself.
 
