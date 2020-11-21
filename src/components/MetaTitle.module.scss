@@ -1,9 +1,0 @@
-@import '../utils/typography';
-@import '../utils/colors';
-
-.root {
-  @include font(display);
-
-  padding-bottom: 0.25rem;
-  margin: 0;
-}
