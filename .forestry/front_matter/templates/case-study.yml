@@ -1,4 +1,66 @@
 ---
 label: Case Study
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Name
+  description: Name of this project.
+- name: metadata
+  type: field_group
+  config: {}
+  fields:
+  - name: date
+    type: datetime
+    label: Date
+    description: Ostensibly the launch date for this project. Largely just used to
+      order it w/ other case studies, though.
+    config:
+      required: true
+      date_format: 
+      time_format: 
+      display_utc: false
+  - name: remote
+    type: text
+    config:
+      required: false
+    label: Remote
+    description: URL for the live site, if applicable.
+  - name: tags
+    type: tag_list
+    default: []
+    label: Tags
+    description: For categorization purposes.
+  - name: technology
+    type: tag_list
+    default: []
+    label: Technology
+    description: Technology used to build this site.
+  - name: clients
+    type: field_group_list
+    fields:
+    - name: name
+      type: text
+      config:
+        required: true
+      label: Client Name
+    - name: url
+      type: text
+      config:
+        required: false
+      label: URL
+    config:
+      min: 
+      max: 
+      labelField: name
+    label: Client(s)
+  label: Metadata
+- name: content
+  type: blocks
+  label: Content
+  template_types: []
+  config:
+    min: 
+    max: 
