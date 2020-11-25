@@ -20,7 +20,7 @@ content:
     To help the client with organizational tasks, this site includes special repositories for staff members (for the staff directory) and the products in their catalog.
 
     OreGro sells a large number of varieties of grass seed, which have different uses, planting times, qualities, etc. In short, each product needed to include a significant amount of metadata. I wanted this data to be structured, so that it could be understood on some level by a machine, but also be accessible via a UI that would make sense to a human user. The data storage and UI features of Statamic made this relatively straightforward: Instead of having to determine how to actual store and query data, I just had to consider how I wanted it organized, and how I wanted people to interact with it
-  heading: ''
+  heading: Heading
 - template: block-image
   image: https://res.cloudinary.com/djd6kxozp/image/upload/v1606345452/alwaysblank.org/oregro-seeds/product.png
   alt: Product, back-end primary tab
