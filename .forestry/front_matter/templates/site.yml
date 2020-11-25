@@ -8,19 +8,35 @@ fields:
   fields:
   - type: text
     name: title
-    label: title
+    label: Name
+    config:
+      required: true
   - type: datetime
     name: date
-    label: date
+    label: Date
+    description: Exact is nice, but a good idea is fine. Currently used only to order
+      and assign to a year.
+    config:
+      required: true
   - type: list
     name: tech
-    label: tech
+    label: Tech
+    description: What I used to build this site.
   - type: text
     name: job
-    label: job
+    label: Job
+    description: Sentence fragment description of the site.
   - type: text
     name: client
-    label: client
+    label: Client
+    description: Who the site was for
   - type: text
     name: excerpt
-    label: excerpt
+    label: Excerpt
+    description: Slightly longer (but still short) description of the site.
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
+    description: URL of the site, if it's public and still exists.
