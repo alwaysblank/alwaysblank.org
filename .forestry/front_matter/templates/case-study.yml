@@ -60,7 +60,10 @@ fields:
 - name: content
   type: blocks
   label: Content
-  template_types: []
+  template_types:
+  - block-text
+  - block-image
+  - block-code
   config:
     min: 
     max: 
