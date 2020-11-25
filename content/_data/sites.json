@@ -1,6 +1,17 @@
 {
   "list": [
     {
+      "title": "TEC Equipment",
+      "date": "2019-12-17T20:56:46Z",
+      "tech": [
+        "WordPress"
+      ],
+      "job": "",
+      "client": "Murmur Creative",
+      "excerpt": "",
+      "link": "https://www.tecequipment.com/"
+    },
+    {
       "title": "Virtual Supply",
       "date": "2020-10-27T19:52:18Z",
       "tech": [
