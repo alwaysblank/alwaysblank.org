@@ -6,6 +6,12 @@ webhook_url:
 sections:
 - type: heading
   label: Sites
+- type: directory
+  path: content/case-studies
+  label: Case Studies
+  create: documents
+  match: "**/*.md"
+  new_doc_ext: ".md"
 - type: document
   path: content/_data/sites.json
   label: List
