@@ -1,4 +1,36 @@
 ---
 label: Block - Code
 hide_body: true
-fields: []
+fields:
+- name: code
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Code
+  description: Syntax-highlighted code.
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
+  description: An h3 heading for this section.
+- name: filename
+  type: text
+  config:
+    required: false
+  label: Filename
+  description: A "filename" that this code would be in.
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Description
+  description: Short description of this code.
