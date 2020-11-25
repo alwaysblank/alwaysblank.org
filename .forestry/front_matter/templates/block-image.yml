@@ -1,4 +1,20 @@
 ---
 label: Block - Image
 hide_body: true
-fields: []
+fields:
+- name: image
+  type: file
+  config:
+    maxSize: 8
+  label: Image
+- name: alt
+  type: text
+  config:
+    required: false
+  label: Alt Tag
+  description: You should fill this out &gt;:(
+- name: caption
+  type: text
+  config:
+    required: false
+  label: Caption
