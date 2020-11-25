@@ -11,7 +11,7 @@ sections:
   label: Case Studies
   create: documents
   match: "**/*.md"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 - type: document
   path: content/_data/sites.json
   label: List
