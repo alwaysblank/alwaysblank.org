@@ -40,3 +40,5 @@ fields:
       required: false
     label: Link
     description: URL of the site, if it's public and still exists.
+pages:
+- content/_data/sites.json
