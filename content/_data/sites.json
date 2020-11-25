@@ -1,6 +1,18 @@
 {
   "list": [
     {
+      "title": "BRIC Architecture",
+      "date": "2020-05-15T19:49:46Z",
+      "tech": [
+        "Netlify",
+        "11ty"
+      ],
+      "job": "",
+      "client": "",
+      "excerpt": "",
+      "link": "https://www.bric-arch.com/"
+    },
+    {
       "title": "Puttman Infrastructure",
       "date": "2018-01-04T20:31:59Z",
       "tech": [
