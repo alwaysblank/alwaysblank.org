@@ -1,5 +1,7 @@
-const exampleFilter = require('./exampleFilter');
+const sortSitesByDate = require('./sortSiteByDate');
+const date = require('./date');
 
 module.exports = conf => {
-    exampleFilter(conf);
+    sortSitesByDate(conf);
+    date(conf);
 }

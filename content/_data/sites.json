@@ -1,0 +1,265 @@
+{
+    "list": [
+        {
+            "title": "Classic Parking",
+            "date": "2014-03-21T09:50:37-08:00",
+            "tech": [
+              "DocPad", 
+              "JavaScript", 
+              "moment.js"
+            ],
+            "job": "Develop static HTML site with payment links",
+            "client": "Marina Martinez Consulting, Classic Parking",
+            "excerpt": "Build a static HTML site that utilized a simple form-based interface to set up monthly payments."
+          },
+          {
+            "title": "El Segundo Museum of Art",
+            "date": "2013-08-07T10:13:33-08:00",
+            "tech": [
+              "WordPress"
+            ],
+            "job": "Develop and deploy WordPress theme from client design",
+            "client": "Marina Martinez Consulting, El Segundo Museum of Art",
+            "excerpt": "Develop a unique solution for a modern gallery to interact with their patrons and present art."
+          },
+          {
+            "title": "Kapi•Bara•San",
+            "date": "2014-02-28T09:57:30-08:00",
+            "tech": [
+              "WordPress", 
+              "CSS Animation"
+            ],
+            "job": "Develop static HTML site with payment links",
+            "client": "Strangely Compelling Multimedia, Inc., BANPRESTO",
+            "excerpt": "Provide a convenient hub for English-speaking fans of the Kapi•Bara•San product line."
+          },
+          {
+            "title": "Marina For Hire",
+            "date": "2020-10-01T09:43:56-08:00",
+            "tech": [
+              "11ty",
+              "Netlify",
+              "Stripe Checkout"
+            ],
+            "job": "Design, develop, and deploy professional compendium",
+            "client": "Marina Martinez-Bateman",
+            "excerpt": "Develop a site to collect and describe the various professional and community endeavors of Marina Martinez-Bateman.",
+            "link": "https://marinaforhire.com"
+          },
+          {
+            "title": "Stackery",
+            "tech": [
+              "Jekyll"
+            ],
+            "date": "2017-09-13T09:43:56-08:00",
+            "client": "Murmur Creative"
+          },
+          {
+            "title": "Victor23",
+            "tech": [
+              "WordPress"
+            ],
+            "date": "2016-10-05T09:43:56-08:00",
+            "client": "Murmur Creative"
+          },
+          {
+            "title": "Vero Watches",
+            "tech": [
+              "WordPress"
+            ],
+            "date": "2017-02-20T09:43:56-08:00",
+            "client": "Murmur Creative"
+          },
+          {
+            "title": "Alma Midwifery",
+            "tech": [
+              "WordPress"
+            ],
+            "date": "2016-04-25T09:43:56-08:00",
+            "client": "Murmur Creative"
+          },
+          {
+            "title": "Via Clinic",
+            "tech": [
+              "WordPress"
+            ],
+            "date": "2016-10-07T09:43:56-08:00",
+            "client": "Murmur Creative",
+            "link": "http://viaclinicmd.com/"
+          },
+          {
+            "title": "Distinction Communication",
+            "tech": [
+              "WordPress"
+            ],
+            "date": "2017-03-16T09:43:56-08:00",
+            "client": "Murmur Creative",
+            "link": "https://distinctioncommunication.com/"
+          },
+          {
+            "title": "Endurance Research",
+            "tech": [
+              "WordPress"
+            ],
+            "date": "2017-09-21T09:43:56-08:00",
+            "client": "Murmur Creative",
+            "link": "http://www.enduranceresearch.com/"
+          },
+          {
+            "title": "Open Tandoor",
+            "tech": [
+              "WordPress"
+            ],
+            "weight": 3,
+            "date": "2016-12-02T09:43:56-08:00",
+            "client": "Murmur Creative",
+            "link": "http://opentandoor.com/"
+          },
+          {
+            "title": "Russell Street BBQ",
+            "tech": [
+              "WordPress"
+            ],
+            "date": "2017-07-20T09:43:56-08:00",
+            "client": "Murmur Creative",
+            "link": "https://www.russellstreetbbq.com/"
+          },
+          {
+            "title": "Droid Life",
+            "tech": [
+              "WordPress"
+            ],
+            "date": "2017-06-22T09:43:56-08:00",
+            "client": "Murmur Creative",
+            "link": "https://www.droid-life.com/"
+          },
+          {
+            "title": "Otto's Sausages",
+            "tech": [
+              "WordPress"
+            ],
+            "date": "2018-01-04T09:43:56-08:00",
+            "client": "Murmur Creative",
+            "link": "https://www.ottossausage.com/"
+          },
+          {
+            "title": "TCNF",
+            "tech": [
+              "WordPress"
+            ],
+            "date": "2016-12-06T09:43:56-08:00",
+            "client": "Murmur Creative",
+            "link": "https://www.tcnf.legal/"
+          },
+          {
+            "title": "Sasquatch Brewery",
+            "tech": [
+              "WordPress"
+            ],
+            "date": "2018-06-21T09:43:56-08:00",
+            "client": "Murmur Creative",
+            "link": "https://www.sasquatchbrewery.com/"
+          },
+          {
+            "title": "Urban Works Real Estate",
+            "tech": [
+              "WordPress"
+            ],
+            "date": "2016-03-15T09:43:56-08:00",
+            "client": "Murmur Creative",
+            "link": "https://www.urbanworksrealestate.com/"
+          },
+          {
+            "title": "Aurora Military Housing",
+            "tech": [
+              "WordPress"
+            ],
+            "date": "2017-04-27T09:43:56-08:00",
+            "client": "Murmur Creative",
+            "link": "https://www.auroramilitaryhousing.com/"
+          },
+          {
+            "title": "Ben Cox",
+            "tech": [
+              "WordPress"
+            ],
+            "date": "2016-01-12T09:43:56-08:00",
+            "client": "Murmur Creative",
+            "link": "https://coxlawpdx.com/"
+          },
+          {
+            "title": "Marion Polk Food Share",
+            "tech": [
+              "WordPress"
+            ],
+            "date": "2016-10-13T09:43:56-08:00",
+            "client": "Murmur Creative",
+            "link": "https://www.marionpolkfoodshare.org/"
+          },
+          {
+            "title": "Hash House A Go Go",
+            "tech": [
+              "WordPress"
+            ],
+            "date": "2018-06-07T09:43:56-08:00",
+            "client": "Murmur Creative",
+            "link": "https://www.hashhouseagogo.com/"
+          },
+          {
+            "title": "Steelhead Hospitality",
+            "tech": [
+              "WordPress"
+            ],
+            "date": "2016-12-30T09:43:56-08:00",
+            "client": "Murmur Creative",
+            "link": "https://www.steelheadhospitality.com/"
+          },
+          {
+            "title": "Catholic Charities",
+            "tech": [
+              "WordPress"
+            ],
+            "date": "2019-05-24T09:43:56-08:00",
+            "client": "Murmur Creative",
+            "link": "https://www.catholiccharitiesoforegon.org/"
+          },
+          {
+            "title": "KR Capital",
+            "tech": [
+              "WordPress"
+            ],
+            "date": "2019-08-07T09:43:56-08:00",
+            "client": "Murmur Creative",
+            "link": "https://www.deliveryroutesforsale.com/"
+          },
+          {
+            "title": "Oregro",
+            "tech": [
+              "Statamic",
+              "JavaScript"
+            ],
+            "date": "2019-08-09T09:43:56-08:00",
+            "client": "Murmur Creative",
+            "link": "https://www.oregroseeds.com/"
+          },
+          {
+            "title": "Kurisu International",
+            "tech": [
+              "Statamic",
+              "JavaScript"
+            ],
+            "date": "2019-01-30T09:43:56-08:00",
+            "client": "Murmur Creative",
+            "link": "https://www.kurisu.com/"
+          },
+          {
+            "title": "Evergreen",
+            "tech": [
+              "WordPress"
+            ],
+            "date": "2015-12-02T09:43:56-08:00",
+            "client": "Murmur Creative",
+            "link": "https://www.theevergreenpdx.com/"
+          }
+    ]
+}

@@ -3,6 +3,4 @@
 @import "tailwindcss/utilities";
 
 body {
-    color: green;
-    background-image: url('../images/elf.jpg');
 }
