@@ -1,0 +1,26 @@
+---
+label: Site
+hide_body: true
+fields:
+- type: field_group_list
+  name: list
+  label: list
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: datetime
+    name: date
+    label: date
+  - type: list
+    name: tech
+    label: tech
+  - type: text
+    name: job
+    label: job
+  - type: text
+    name: client
+    label: client
+  - type: text
+    name: excerpt
+    label: excerpt
