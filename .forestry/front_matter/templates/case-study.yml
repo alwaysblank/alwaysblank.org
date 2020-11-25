@@ -68,3 +68,5 @@ fields:
   config:
     min: 
     max: 
+pages:
+- content/case-studies/oregro-seeds.md
