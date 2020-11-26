@@ -1,0 +1,6 @@
+<figure class="my-6">
+    <img src="{{ block.image | cl_url }}" alt="{{ block.alt }}">
+    {% if block.caption %}
+        <figcation class="italic">{{ block.caption | md |safe }}</figcation>
+    {% endif %}
+</figure>

@@ -58,7 +58,7 @@ fields:
       labelField: name
     label: Client(s)
   label: Metadata
-- name: content
+- name: blocks
   type: blocks
   label: Content
   template_types:

@@ -1,0 +1,9 @@
+---
+layout: app.njk
+---
+<div class="max-w-4xl mx-auto">
+{% for block in blocks %}
+    {% set name = block.template | replace('block-', '') %}   
+    {% include "blocks/" + name + ".njk" %}
+{% endfor %}
+</div>

@@ -1,0 +1,6 @@
+<div class="my-6">
+    {% if block.heading %}
+       <h2 class="font-block text-xl">{{ block.heading }}</h2> 
+    {% endif %}
+    <div>{{ block.content | md | safe }}</div>
+</div>

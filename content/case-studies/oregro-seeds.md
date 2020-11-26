@@ -10,7 +10,7 @@ metadata:
   - name: Murmur Creative
     url: https://murmurcreative.com
 title: Oregro Seeds
-content:
+blocks:
 - template: block-text
   content: |-
     This site was created to replace an older, outdated site. The primary function of the site is to inform visitors of the wide range of products OreGro, Inc. offers, as well as provide background on the company itself.
@@ -22,22 +22,22 @@ content:
     OreGro sells a large number of varieties of grass seed, which have different uses, planting times, qualities, etc. In short, each product needed to include a significant amount of metadata. I wanted this data to be structured, so that it could be understood on some level by a machine, but also be accessible via a UI that would make sense to a human user. The data storage and UI features of Statamic made this relatively straightforward: Instead of having to determine how to actual store and query data, I just had to consider how I wanted it organized, and how I wanted people to interact with it
   heading: Heading
 - template: block-image
-  image: https://res.cloudinary.com/djd6kxozp/image/upload/v1606345452/alwaysblank.org/oregro-seeds/product.png
+  image: alwaysblank.org/oregro-seeds/product.png
   alt: Product, back-end primary tab
   caption: The primary product tab on the backend, showed description, variety, and
     some metadata.
 - template: block-image
-  image: https://res.cloudinary.com/djd6kxozp/image/upload/v1606345452/alwaysblank.org/oregro-seeds/product-details.png
+  image: alwaysblank.org/oregro-seeds/product-details.png
   alt: Product, back-end details tab
   caption: One of the product "details" sections. A user can add an arbitrary number
     of these.
 - template: block-image
-  image: https://res.cloudinary.com/djd6kxozp/image/upload/v1606345452/alwaysblank.org/oregro-seeds/product-trials.png
+  image: alwaysblank.org/oregro-seeds/product-trials.png
   alt: Product, back-end trials tab
   caption: 'Some products were involved in trials with competing products: This is
     a UI to record the results of those trials.'
 - template: block-image
-  image: https://res.cloudinary.com/djd6kxozp/image/upload/v1606345452/alwaysblank.org/oregro-seeds/product-frontend.jpg
+  image: alwaysblank.org/oregro-seeds/product-frontend.jpg
   caption: And example of how all the backend metadata comes together for a visitor
     to the website.
   alt: Product, front-end
@@ -51,11 +51,11 @@ content:
     to get in touch with staff members
   heading: ''
 - template: block-image
-  image: https://res.cloudinary.com/djd6kxozp/image/upload/v1606345452/alwaysblank.org/oregro-seeds/staff-backend.png
+  image: alwaysblank.org/oregro-seeds/staff-backend.png
   alt: Staff, back-end
   caption: A view of the back-end UI for editing or creating staff members.
 - template: block-image
-  image: https://res.cloudinary.com/djd6kxozp/image/upload/v1606345452/alwaysblank.org/oregro-seeds/staff-frontend.jpg
+  image: alwaysblank.org/oregro-seeds/staff-frontend.jpg
   alt: Staff, front-end
   caption: How a staff member appears on the site to a visitor.
 - template: block-text
