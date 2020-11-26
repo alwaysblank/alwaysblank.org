@@ -4,7 +4,7 @@ metadata:
   - Development
   technology:
   - Statamic
-  date: 2019-08-09T07:00:00Z
+  date: 2019-08-09T07:00:00.000+00:00
   remote: https://oregroseeds.com
   clients:
   - name: Murmur Creative
@@ -13,7 +13,7 @@ title: Oregro Seeds
 blocks:
 - template: block-text
   content: |-
-    This site was created to replace an older, outdated site. The primary function of the site is to inform visitors of the wide range of products OreGro, Inc. offers, as well as provide background on the company itself.
+    **This site was created to replace an older, outdated site. The primary function of the site is to inform visitors of the wide range of products OreGro, Inc. offers, as well as provide background on the company itself.**
 
     I wasn't directly involved in the initial design of this site; In my capacity as an in-house developer for Murmur Creative, I was given an already-approved design for implementation. On this project, we split development up into front-end and back-end; I built the underlying structure and customized the back-end while one of my co-workers assembled the CSS and JavaScript for the front-end. The size of the Murmur development team and our tight schedules usually mean this type of collaboration isn't possible, for the stars aligned for this project and it resulted in a much, much shorter turnaround that usual--I'm hoping to use the same or a similar process for additional projects in the future.
 
