@@ -7,7 +7,7 @@ sections:
 - type: heading
   label: Sites
 - type: directory
-  path: content/case-studies
+  path: content/case-study
   label: Case Studies
   create: documents
   match: "**/*.md"
