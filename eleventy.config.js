@@ -15,12 +15,13 @@ module.exports = function (conf) {
                 quality: "auto",
             }],
             defaults: {
-                width: 1024
+                width: 590
             }
         })
     });
     conf.addPlugin(require('@11ty/eleventy-plugin-syntaxhighlight'))
     conf.addPlugin(require('@11ty/eleventy-navigation'))
+    conf.addPlugin(require('eleventy-plugin-helmet'))
 
     /**
      * Copy assets into root, so that manifest records don't need modification.
