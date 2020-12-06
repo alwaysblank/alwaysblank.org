@@ -68,3 +68,5 @@ fields:
   config:
     min: 
     max: 
+pages:
+- content/case-study/droid-life.md
