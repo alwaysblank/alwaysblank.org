@@ -1,8 +1,22 @@
 ---
-layout: app.njk
+layout: page.njk
 title: Case Studies
 ---
 
-{% for study in collections.caseStudies %}
-   {{ study.url }} 
-{% endfor %}
+<div>
+   <ul>
+      {% for study in collections.caseStudies %}
+      <li>
+         <a href="{{ study.url }}">{{ study.data.title }}</a>
+         <div class="prose-sm">
+            <div>
+               {{ study.data.metadata.tags | join(', ')}}
+            </div>
+            <div>
+               {{ study.data.metadata.technology | join(', ')}}
+            </div>
+         </div>
+      </li>
+      {% endfor %}
+   </ul>
+</div>
