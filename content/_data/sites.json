@@ -52,7 +52,7 @@
         "11ty"
       ],
       "job": "",
-      "client": "",
+      "client": "Murmur Creative",
       "excerpt": "",
       "link": "https://www.bric-arch.com/"
     },
@@ -225,7 +225,8 @@
       "client": "Murmur Creative",
       "link": "https://www.droid-life.com/",
       "job": "",
-      "excerpt": ""
+      "excerpt": "",
+      "case_study": "/case-study/droid-life/"
     },
     {
       "title": "Otto's Sausages",
@@ -358,7 +359,8 @@
       "client": "Murmur Creative",
       "link": "https://www.oregroseeds.com/",
       "job": "",
-      "excerpt": ""
+      "excerpt": "",
+      "case_study": "/case-study/oregro-seeds"
     },
     {
       "title": "Kurisu International",

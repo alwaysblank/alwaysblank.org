@@ -4,7 +4,28 @@
         <h3 class="text-xl font-bold">{{ group.year }}</h3>
         <ul>
             {% for site in group.sites | sort_sites_by_date %}
-            <li>{{ site.title }}</li>
+            <li class="{% if site.case_study -%} has-case-study {%- endif %}">
+                {% if site.link %}
+                <a href="{{ site.link }}">{{ site.title }} ➦</a>
+                {% else %}
+                {{ site.title }}
+                {% endif %}
+                <div class="prose-sm">
+                    <span>{{ site.client }}</span>
+                    {% if site.tech.length > 0 %}
+                    <span class="mx-1 font-bold">|</span>
+                    <span>{{ site.tech | join(', ') }}</span>
+                    {% endif %}
+                    {% if site.job %}
+                    <span class="mx-1 font-bold">|</span>
+                    <span>{{ site.job }}</span>
+                    {% endif %}
+                    {% if site.case_study %}
+                    <span class="mx-1 font-bold">|</span>
+                    <a href="{{ site.case_study }}">Case Study ➦</a>
+                    {% endif %}
+                </div>
+            </li>
             {% endfor %}
         </ul>
     </li>

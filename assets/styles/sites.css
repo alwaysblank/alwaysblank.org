@@ -1,0 +1,11 @@
+.prose ul > li.has-case-study::before {
+    content: "🌟";
+    top: 0;
+    border-radius: 0;
+    left: -0.075em;
+    font-size: 1rem;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    @apply text-pink-600;
+}
