@@ -3,3 +3,4 @@
 @import "tailwindcss/utilities";
 
 @import "./admonition.css";
+@import "./prism.css";

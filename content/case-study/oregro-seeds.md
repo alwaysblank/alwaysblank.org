@@ -12,6 +12,7 @@ metadata:
 title: Oregro Seeds
 blocks:
 - template: block-text
+  heading: "hello friends"
   content: |-
     **This site was created to replace an older, outdated site. The primary function of the site is to inform visitors of the wide range of products OreGro, Inc. offers, as well as provide background on the company itself.**
 
@@ -20,7 +21,6 @@ blocks:
     To help the client with organizational tasks, this site includes special repositories for staff members (for the staff directory) and the products in their catalog.
 
     OreGro sells a large number of varieties of grass seed, which have different uses, planting times, qualities, etc. In short, each product needed to include a significant amount of metadata. I wanted this data to be structured, so that it could be understood on some level by a machine, but also be accessible via a UI that would make sense to a human user. The data storage and UI features of Statamic made this relatively straightforward: Instead of having to determine how to actual store and query data, I just had to consider how I wanted it organized, and how I wanted people to interact with it
-  heading: Heading
 - template: block-image
   image: alwaysblank.org/oregro-seeds/product.png
   alt: Product, back-end primary tab
@@ -62,5 +62,4 @@ blocks:
   content: (Sadly, so far as I know Dwayne "The Rock" Johnson is not actually an OreGro
     employee.)
   heading: ''
-
 ---

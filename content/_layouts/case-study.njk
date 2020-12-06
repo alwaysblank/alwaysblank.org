@@ -1,9 +1,50 @@
 ---
 layout: app.njk
 ---
-<div class="max-w-4xl mx-auto">
-{% for block in blocks %}
-    {% set name = block.template | replace('block-', '') %}   
-    {% include "blocks/" + name + ".njk" %}
-{% endfor %}
+<div class="max-w-3xl mx-auto ">
+    <header>
+        <div class="flex items-end mb-10">
+            <h1 class="mr-4 text-4xl font-bold">{{ title }}</h1>
+            {% if metadata.remote %}
+            <div class="prose prose-sm prose-pink">
+                <a href="{{ metadata.remote }}">Visit Site ➦</a>
+            </div>
+            {% endif %}
+        </div>
+        <div class="grid gap-6 md:grid-cols-3">
+            {% if metadata.technology %}
+            <div>
+                <strong>Built On:</strong>
+                <ul>
+                    {% for technology in metadata.technology %}
+                    <li class="prose prose-sm">{{ technology }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+            {% if metadata.clients %}
+            <div>
+                <strong>Made For:</strong>
+                <ul>
+                    {% for client in metadata.clients %}
+                    <li class="prose prose-pink prose-sm">
+                        {% if client.url %}
+                        <a href="{{ client.url }}">{{ client.name }} ➦</a>
+                        {% else %}
+                        {{ client.name }}
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+
+    </header>
+    <section class="prose prose-pink">
+        {% for block in blocks %}
+        {% set name = block.template | replace('block-', '') %}
+        {% include "blocks/" + name + ".njk" %}
+        {% endfor %}
+    </section>
 </div>

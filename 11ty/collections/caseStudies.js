@@ -1,9 +1,7 @@
 module.exports = conf => {
-    conf.addCollection('case-studies', function (api) {
-        return api.getAll()
+    conf.addCollection('caseStudies', function (api) {
+        return api.getFilteredByGlob('content/case-study/*.md')
             .map(study => {
-                study.data.page.someValue = 'test';
-
                 if (study.data?.blocks 
                     && study.data.blocks.find(block => 'block-code' === block.template)) {
                     // This has a code block
