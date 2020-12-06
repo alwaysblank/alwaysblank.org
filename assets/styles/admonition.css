@@ -1,0 +1,45 @@
+div[class*="admonition-"] {
+    @apply px-6 pt-4 pb-2 border-t-8 bg-opacity-10 rounded-md my-6;
+}
+
+div[class*="admonition-"]::before {
+    display: block;
+    @apply mb-4 text-sm font-bold uppercase;
+}
+
+.admonition-note {
+    @apply bg-blue-500 border-blue-600;
+}
+
+.admonition-note::before {
+    @apply text-blue-600;
+    content: "ℹ Note";
+}
+
+.admonition-warning {
+    @apply bg-red-600 border-red-400;
+}
+
+.admonition-warning::before {
+    @apply text-red-400;
+    content: "⚠ Warning"
+}
+
+.admonition-important {
+    @apply bg-yellow-600 border-yellow-400;
+}
+
+.admonition-important::before {
+    @apply text-yellow-400;
+    content: "❗ Important";
+}
+
+.admonition-tip {
+    @apply bg-pink-600 border-pink-400;
+}
+
+.admonition-tip::before {
+    @apply text-pink-400;
+    content: "💡 Tip";
+}
+
