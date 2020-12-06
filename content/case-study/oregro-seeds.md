@@ -12,7 +12,6 @@ metadata:
 title: Oregro Seeds
 blocks:
 - template: block-text
-  heading: "hello friends"
   content: |-
     **This site was created to replace an older, outdated site. The primary function of the site is to inform visitors of the wide range of products OreGro, Inc. offers, as well as provide background on the company itself.**
 
