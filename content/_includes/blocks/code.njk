@@ -1,5 +1,11 @@
+{% if block.language %}
+    {% set lang = block.language %}
+{% else %}
+    {% set lang = 'bash' %}
+{% endif %}
+
 <div class="my-10">
-{% highlight "js" %}
-    {{ block.content }}
+{% highlight lang %}
+    {{ block.content | safe }}
 {% endhighlight %}
 </div>

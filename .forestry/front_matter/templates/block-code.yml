@@ -12,6 +12,10 @@ fields:
       format: markdown
   label: Code
   description: Syntax-highlighted code.
+- name: language
+  type: text
+  label: Language
+  description: The language this code is in.
 - name: heading
   type: text
   config:

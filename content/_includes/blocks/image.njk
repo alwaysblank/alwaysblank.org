@@ -1,6 +1,6 @@
-<figure class="my-6">
-    <img src="{{ block.image | cl_url }}" alt="{{ block.alt }}">
+<figure class="my-6 bg-pink-600 text-white p-0.5 rounded-md">
+    {% cl_img { path: block.image, alt: block.alt, css: "rounded-md relative z-10", size: 590, srcset: [360, 590, 1180], sizes: '(min-width: 590px) 590px, 100vw' } %}
     {% if block.caption %}
-        <figcation class="italic">{{ block.caption | md |safe }}</figcation>
+        <figcation class="italic px-4 py-2 text-md block relative z-0 -mt-4 rounded-b-md">{{ block.caption | md({p: false}) |safe }}</figcation>
     {% endif %}
 </figure>
